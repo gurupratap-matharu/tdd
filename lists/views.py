@@ -1,5 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import HttpResponse
 
 
 def home_page(request):
-    render(request, 'lists/home.html')
+    return HttpResponse('<html><title>To-Do lists</title></html>')
